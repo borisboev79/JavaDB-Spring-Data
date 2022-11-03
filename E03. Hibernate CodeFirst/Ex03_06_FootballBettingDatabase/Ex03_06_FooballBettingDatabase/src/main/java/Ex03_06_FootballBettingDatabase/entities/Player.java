@@ -2,9 +2,6 @@ package Ex03_06_FootballBettingDatabase.entities;
 
 import jakarta.persistence.*;
 
-import javax.swing.text.Position;
-import java.util.List;
-import java.util.Set;
 
 @Entity
 public class Player extends AutoIncrementId{
@@ -20,7 +17,6 @@ public class Player extends AutoIncrementId{
 
 
     @ManyToOne
-    @JoinColumn(name = "position_id")
     private Position position;
 
     public Player() {
