@@ -29,6 +29,5 @@ public class Ex02_06_AddNewAddressAndUpdateEmployee {
             em.getTransaction().rollback();
         }
         em.close();
-
     }
 }
